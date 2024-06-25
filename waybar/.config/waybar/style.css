@@ -1,0 +1,114 @@
+@import "mocha.css";
+
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
+* {
+  font-family: iosevka;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: rgba(30, 30, 46, 0);
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  transition-duration: .5s;
+  margin: 10px 10px;
+}
+
+window#waybar.hidden {
+  opacity: 0;
+}
+
+#workspaces button {
+  color: @text;
+  background: @background3;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+  margin: 2px 4px 0px 4px;
+  border: 1px solid @subtext1;
+}
+
+#workspaces button:hover {
+  background: @surface0;
+  color: @text;
+}
+
+#workspaces button.active {
+  color: @crust;
+  background: @overlay2;
+  border: none; 
+}
+
+#clock,
+#battery,
+#cpu,
+#temperature,
+#backlight,
+#network,
+#pulseaudio
+{
+  padding: 0px 10px;
+  margin: 5px 0px 5px 0px;
+	border-radius: 8px;
+  color: @crust;
+}
+
+#window,
+
+#cpu {
+  background-color: @mauve;
+}
+
+#temperature{
+  background-color: @pink;
+}
+
+#backlight {
+  background-color: @flamingo;
+}
+
+#pulseaudio {
+  padding: 0px 20px 0px 17px;
+  background-color: @rosewater;
+}
+
+#network {
+  padding: 0px 15px 0px 20px;
+  background-color: @flamingo;
+}
+
+#battery {
+  background-color: @pink;
+}
+
+#clock {
+  background-color: @mauve;
+}
+
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #abb2bf;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
