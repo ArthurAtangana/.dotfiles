@@ -1,7 +1,3 @@
-## set nvim as default file editor
-export VISUAL=nvim
-export EDITOR="$VISUAL"
-
 ## Theming
 eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.toml)"
 
