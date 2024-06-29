@@ -3,6 +3,7 @@ eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/config.toml)"
 
 ## Aliases
 source ~/.aliases
+eval $(thefuck --alias)
 
 ## Keybindings
 # bindkey -v # vim
