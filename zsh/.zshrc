@@ -45,3 +45,8 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 if [ -d /usr/share/zsh/site-functions ]; then fpath+=/usr/share/zsh/site-functions fi
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+## pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
