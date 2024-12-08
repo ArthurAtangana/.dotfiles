@@ -1,6 +1,10 @@
 dotfile repository
 
-stow each directory
-- stow zsh
-- stow oh-my-posh
-etc...
+- from inside the directory, stow
+```bash
+stow .
+```
+- other needed things:
+```bash
+sudo pacman -S pavucontrol pipewire-pulse
+```
