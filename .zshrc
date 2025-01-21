@@ -6,7 +6,7 @@ source ~/.aliases
 eval $(thefuck --alias)
 
 ## Keybindings
-# bindkey -v # vim
+bindkey -v # vim
 
 ## History
 
