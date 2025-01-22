@@ -3,6 +3,7 @@ alias vim='nvim'
 alias vi='nvim'
 
 alias -g log1='log --oneline'
+alias restartwaybar='killall -SIGUSR2 waybar'
 
 view() {
     case "${1##*.}" in

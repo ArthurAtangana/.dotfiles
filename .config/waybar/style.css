@@ -55,7 +55,7 @@ window#waybar.hidden {
 {
   padding: 0px 10px;
   margin: 5px 0px 5px 0px;
-	border-radius: 8px;
+  border-radius: 8px;
   color: @crust;
 }
 
@@ -63,6 +63,7 @@ window#waybar.hidden {
 
 #cpu {
   background-color: @mauve;
+  margin: 5px 0px 5px 10px;
 }
 
 #temperature{
@@ -89,6 +90,7 @@ window#waybar.hidden {
 
 #clock {
   background-color: @mauve;
+  margin: 5px 10px 5px 0px;
 }
 
 
