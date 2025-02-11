@@ -28,8 +28,8 @@
         //"sway/language",
         "battery",
         //"battery#bat2",
-        "clock",
-        "tray"
+        "clock"
+        //"tray"
     ],
      //Modules configuration
      "hyprland/workspaces": {
@@ -167,7 +167,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "nm-applet"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
