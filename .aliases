@@ -9,7 +9,7 @@ view() {
     case "${1##*.}" in
         txt|log) less "$1" ;;
         pdf) zathura "$1" ;;
-        png|jpg|jpeg) kitten icat "$1" ;;
+        png|jpg|jpeg|bmp|gif|tiff|webp) kitten icat "$1" ;;
         mp4|mkv) mpv "$1" ;;
         *) xdg-open "$1" ;;
     esac
