@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Signal Desktop (Wayland)
+Name=Signal
 Comment=Signal - Private Messenger
 Icon=signal-desktop
 Exec=signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland --use-tray-icon=false --reset-window

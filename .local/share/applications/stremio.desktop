@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Stremio
+Comment=Stremio
+Icon=Stremio
+Exec=stremio --enable-features=UseOzonePlatform --ozone-platform=wayland --use-tray-icon=false
+Terminal=false
+Categories=Video;
+StartupWMClass=stremio
+MimeType=x-scheme-handler/sgnl;x-scheme-handler/signalcaptcha;
+Keywords=video;media;movies;
+
