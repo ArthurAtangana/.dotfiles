@@ -1,14 +1,12 @@
+# Timeout @ 30 seconds
+default-timeout=30000
+font=iosevka 10
 # Colors
 background-color=#1e1e2e
 text-color=#cdd6f4
-progress-color=over #313244
-
+progress-color=over #a6e3a1
 # Borders
 border-radius=5
-border-color=#89dceb
+border-color=#89b4fa
 [urgency=high]
 border-color=#f38ba8
-
-
-# Timeout @ 10 seconds
-default-timeout=10000
