@@ -102,7 +102,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10
+        "spacing": 5
     },
     "clock": {
         // "timezone": "America/New_York",
@@ -178,12 +178,12 @@
         "format-source": "{volume}% ",
         "format-source-muted": " ",
         "format-icons": {
-            "headphone": "",
+            "headphone": " ",
             "hands-free": "",
             "headset": " ",
-            "phone": "󰏲",
-            "portable": "",
-            "car": "󰄋",
+            "phone": "󰏲 ",
+            "portable": " ",
+            "car": "󰄋 ",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"

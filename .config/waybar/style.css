@@ -51,12 +51,14 @@ window#waybar.hidden {
 #temperature,
 #backlight,
 #network,
+#tray,
 #pulseaudio
 {
   padding: 0px 10px;
   margin: 5px 0px 5px 0px;
   border-radius: 8px;
   color: @crust;
+  background-color: @rosewater;
 }
 
 #window,
@@ -74,13 +76,8 @@ window#waybar.hidden {
   background-color: @flamingo;
 }
 
-#pulseaudio {
-  padding: 0px 20px 0px 17px;
-  background-color: @rosewater;
-}
-
 #network {
-  padding: 0px 15px 0px 20px;
+  padding: 0px 10px;
   background-color: @flamingo;
 }
 
@@ -90,7 +87,10 @@ window#waybar.hidden {
 
 #clock {
   background-color: @mauve;
+}
+#tray {
   margin: 5px 10px 5px 0px;
+  background-color: @maroon;
 }
 
 
