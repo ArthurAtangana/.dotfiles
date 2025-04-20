@@ -1,5 +1,5 @@
-# Timeout @ 30 seconds
-default-timeout=30000
+# Timeout @ 20 seconds
+default-timeout=20000
 font=iosevka 10
 # Colors
 background-color=#1e1e2e
