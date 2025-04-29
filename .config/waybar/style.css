@@ -1,10 +1,10 @@
 @import "mocha.css";
 
-/* margin: top right bottom left */
 /* Spacing outside the element */
+/* margin: top right bottom left */
 
-/* padding: top right bottom left */
 /* Spacing inside the element */
+/* padding: top right bottom left */
 
 * {
   font-family: iosevka;
@@ -45,27 +45,27 @@ window#waybar.hidden {
   border: none; 
 }
 
-#clock,
-#battery,
 #cpu,
 #temperature,
 #backlight,
-#network,
-#tray,
-#pulseaudio
-{
-  padding: 0px 10px;
-  margin: 5px 0px 5px 0px;
-  border-radius: 8px;
-  color: @crust;
-  background-color: @rosewater;
-}
-
 #window,
+#pulseaudio,
+#custom-bluetooth,
+#network,
+#battery,
+#clock,
+#tray,
+
+#cpu, #temperature, #backlight, #window, #pulseaudio, #custom-bluetooth, #network, #battery, #clock, #tray {
+  color: @crust;
+  border-radius: 8px;
+  padding: 0px 5px;
+  margin: 5px 2.5px 5px 2.5px;
+}
 
 #cpu {
   background-color: @mauve;
-  margin: 5px 0px 5px 10px;
+  margin: 5px 2.5px 5px 10px;
 }
 
 #temperature{
@@ -76,8 +76,19 @@ window#waybar.hidden {
   background-color: @flamingo;
 }
 
+#pulseaudio {
+  /* padding: 0px 10px; */
+  /* margin: 5px 0px 5px 0px; */
+  /* border-radius: 8px; */
+  background-color: @rosewater;
+}
+
+#custom-bluetooth {
+  background-color: @sky;
+}
+
 #network {
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
   background-color: @flamingo;
 }
 
@@ -87,9 +98,10 @@ window#waybar.hidden {
 
 #clock {
   background-color: @mauve;
+  margin: 5px 10px 5px 2.5px;
 }
 #tray {
-  margin: 5px 10px 5px 0px;
+  margin: 5px 10px 5px 2.5px;
   background-color: @maroon;
 }
 

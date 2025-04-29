@@ -21,6 +21,7 @@
         //"mpd",
         //"idle_inhibitor",
         "pulseaudio",
+        "custom/bluetooth",
         "network",
         //"power-profiles-daemon",
         //"memory",
@@ -28,8 +29,8 @@
         //"sway/language",
         "battery",
         //"battery#bat2",
-        "clock",
-        "tray"
+        "clock"
+        // "tray"
     ],
      //Modules configuration
      "hyprland/workspaces": {
@@ -158,6 +159,10 @@
         "balanced": "",
         "power-saver": ""
       }
+    },
+    "custom/bluetooth": {
+        "format": "",
+        "on-click": "blueman-manager"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
