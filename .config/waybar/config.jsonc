@@ -29,7 +29,8 @@
         //"sway/language",
         "battery",
         //"battery#bat2",
-        "clock"
+        "clock",
+        "custom/power"
         // "tray"
     ],
      //Modules configuration
@@ -124,7 +125,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""]
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -192,6 +193,12 @@
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/power":{
+        "format": "",
+        "tooltip-format": "Power Menu",
+        "on-click": "~/.config/fuzzel/power-menu",
+        "interval": 3600
     },
     "custom/media": {
         "format": "{icon} {}",
