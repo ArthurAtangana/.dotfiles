@@ -46,18 +46,19 @@ window#waybar.hidden {
 }
 
 #cpu,
+#memory,
 #temperature,
 #backlight,
 #window,
 #pulseaudio,
-#custom-bluetooth,
+#bluetooth,
 #network,
 #battery,
 #clock,
 #custom-power,
 #tray,
 
-#cpu, #temperature, #backlight, #window, #pulseaudio, #custom-bluetooth, #network, #battery, #clock, #tray {
+#cpu, #memory, #temperature, #backlight, #window, #pulseaudio, #bluetooth, #network, #battery, #clock, #tray {
   color: @crust;
   border-radius: 8px;
   padding: 0px 5px;
@@ -66,23 +67,30 @@ window#waybar.hidden {
 
 #cpu {
   background-color: @mauve;
+  padding: 0px 7px 0px 5px;
   margin: 5px 2.5px 5px 10px;
 }
 
-#temperature{
+#memory {
   background-color: @pink;
+  padding: 0px 10px 0px 5px;
+}
+
+#temperature{
+  background-color: @flamingo;
 }
 
 #backlight {
-  background-color: @flamingo;
+  background-color: @rosewater;
 }
 
 #pulseaudio {
   background-color: @rosewater;
 }
 
-#custom-bluetooth {
-  background-color: @sky;
+#bluetooth {
+  background-color: @lavender;
+  padding: 0px 6px 0px 5px;
 }
 
 #network {
@@ -91,6 +99,14 @@ window#waybar.hidden {
 
 #battery {
   background-color: @pink;
+}
+#battery.discharging.critical {
+  background-color: @red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #clock {
@@ -104,8 +120,8 @@ window#waybar.hidden {
 }
 
 #tray {
-  margin: 5px 10px 5px 0px;
   background-color: @maroon;
+  margin: 5px 10px 5px 0px;
 }
 
 
