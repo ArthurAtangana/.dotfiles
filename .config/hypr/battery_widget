@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Get battery capacity and status
+capacity=$(cat /sys/class/power_supply/BAT*/capacity)
+status=$(cat /sys/class/power_supply/BAT*/status)
+
+# Choose icon based on capacity
+if [[ $capacity -ge 90 ]]; then
+    icon=" "   # Full
+elif [[ $capacity -ge 70 ]]; then
+    icon=" "   # 3/4
+elif [[ $capacity -ge 50 ]]; then
+    icon=" "   # Half
+elif [[ $capacity -ge 20 ]]; then
+    icon=" "   # 1/4
+else
+    icon=" "   # Empty
+fi
+
+# Append charging icon if charging
+[[ "$status" == "Charging" ]] && icon="$icon󱐋"
+
+# Output
+echo "$icon $capacity%"
