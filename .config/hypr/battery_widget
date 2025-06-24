@@ -21,4 +21,4 @@ fi
 [[ "$status" == "Charging" ]] && icon="$icon󱐋"
 
 # Output
-echo "$icon $capacity%"
+echo "$icon  $capacity%"

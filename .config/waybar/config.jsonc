@@ -27,8 +27,8 @@
         //"keyboard-state",
         "battery",
         "clock",
+        "tray",
         "custom/power"
-        // "tray"
     ],
      //Modules configuration
      "hyprland/workspaces": {
